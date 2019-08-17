@@ -34,3 +34,53 @@ basic易学，但功能不够强大，没有大厂商的支持，仅用于大学
 004
 java的发展简史（生态体系）
 1991年james gosling的sun公司的工程师设计的小型计算机语言（语言不依赖于任何平台）
+005
+java的核心优势是计算机界的英语
+006
+java的三个版本
+Javaee（java enterprise edition）：企业版，定位在服务器端的应用。
+javase（java standard editition）：标准版，定位，定位在服务器中的应用
+javame（java micro edition）：微型版，定位在消费性电子产品的应用上
+007
+java的核心优势：
+跨平台，java永远是32位的
+安全性
+面向对象
+简单性：C++-
+高性能
+分布式
+多线程：可以打造高性能的额服务器
+008
+java运行程序的机制
+源文件》Java编辑器》字节码文件》（jre）【（类装载器》字节码校验器》解释器）】》系统平台
+009
+JVM（java virtual Machine）就是一个虚拟应用于执行bytecode字节码的“虚拟计算机”。
+Java Runtime Envirment（JRE）包含：Java虚拟机、库函数、运行Java程序所必需的文件。
+Java development Kit（JDK）包含：包含JRE，以及增加编译器和调试器等用于程序开发的文件
+（（（JVM）JRE）JDK）
+010
+安装下载的地址：www.oracle.com/technetwork/java/javase/downloads/index.html
+windows x86是32位的 windows x64是64位系统的
+全都是下一步基本不需要
+c-program file java （bin文件目录）（lib数据库）（src源代码）
+011
+环境变量path配置
+环境变量是在操作系统中一个具有特定名字的对象，它包含了一个或多个应用程序所将使用到的信息
+path是告诉操作系统的环境变量
+查看环境变量：右击电脑属性，高级系统设置，高级，环境变量，打开：（所有的符号是英文的半角符号）
+选择安装目录Ctrl+c到系统变量（JAVA_HOME）
+Path编辑（%JAVA_HOME%\bin;）,一定要用英文的分号
+012
+测试jdk安装成功
+win+R输入cmd调出黑板输入java-version
+013
+开发第一个java小程序：记事本编写代码（editplus notepad）
+1.保存为：Welcome.java(文件名必须为Welcome，大小写也必须一致)
+2.编译（编译器创建class字节码文件）:打开命令窗口进入java文件所在目录；执行javac Welcome.java,生成class文件。
+3.解释并运行阶段：cmd----d:---cd mycode---javac Welcome.java
+public class Welcome{
+       public static void main(String[] args){
+          System.out.println("我叫薛文彬，第一次学习java");
+       }
+}
+----------------------------------------------------------------------------------------------------8.17
