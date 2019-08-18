@@ -119,3 +119,12 @@ NetBeans官方网址：http://www.jetbrains.com/idea/
 开发工具都可以
 019
 eclipse安装：根据JDK的版本下载
+020
+创建项目
+src写源代码
+jre下包，打包拿出来用
+bin目录写class文件
+021
+编写helloworld
+022
+写一个台球的小程序
