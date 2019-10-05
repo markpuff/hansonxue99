@@ -186,3 +186,73 @@ a*=b;(a=a*b)
 b=a++先赋值再自增，b=++a先自增再赋值。
 036
 048
+056
+打印101-150之间所有的质数
+outer:for(int i =101;1<150;i++){
+for(intj=2;j<i/2;j++){
+       if(i%j==0){
+              continue outer;
+       }
+}
+       System.out.print(i+'');
+}
+057
+语句块
+public class Test19{
+       public static void main(String[]){
+       TestMethod tm=new Testmethods
+       }
+       void printSxt(){
+              System.out.println("北京尚学堂");
+              System.out.println("shanghai");
+              System.out.println("guangzhou");
+       }
+       void add(inta;intb;intc){
+       int sum=a+b+c;
+       System.out.println(sum);
+       return sum;          //return 两个作用：返回值，结束方法的运行
+       }
+}
+方法就是一段用来完成特定功能的代码片段，类似于其他的语言函数
+1.形式参数：在方法声明时的调用
+2.实参：调用方法
+3.返回值：方法在执行完毕后调用它的环境数据
+4.返回值类型
+注意事项
+实参的类型必须和形参匹配
+return语句终止方法的运行并指定返回数据
+基本型传递的是拷贝的值
+058
+重载的方法实际是完全不同的方法只是名称相同而已
+加static是方便调用
+参数类型不同也可以造成重载
+只有返回值不同不构成重载
+059
+递归结构
+自己调自己
+static void a(){
+       System.out.println("a");
+       a();
+}
+定义递归头。解答：什么时候不调用自己的方法
+static int count=0;
+static void a(){
+       System.out.println("a");
+       count++;
+       }
+递归的本质是自己调用自己
+060
+面向过程和面向对象
+面向过程和对象
+对象的进化史（数据管理）“量变引起质变”的哲学原则；企业管理和数据管理、甚至数据管理也可以
+数据无管理时代
+a
+b
+sum
+对象和企业的项目制
+62
+对象和类的概念
+类：我们叫做class。对象我们叫做object，instance（实例）。以后有对象
+类的额定义方式
+类的比较有两种方法：属性，成员变量
+63
